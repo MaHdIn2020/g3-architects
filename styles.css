@@ -134,21 +134,74 @@ main{
 .sponsor-companies img{
     filter: grayscale(100%);
 }
+.features-info h1{
+    border-left: 5px solid rgb(255, 144, 14);
+    font-weight: 700;
+    font-size: 2.8rem;
+    max-width: 468px;
+    padding-left: 26px;
+}
+.features{
+    gap: 180px;
+    margin-top: 50px;
+}
+.card{
+    max-width: 586px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    padding: 30px;
+}
+.card h4{
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+.card p{
+    max-width: 514px;
+}
+#experience{
+    font-weight: 500;
+    font-size: 1.25rem;
+    max-width: 300px;
+    margin-left: -100px;
+    margin-top: -100px;
+    padding: 42px 16px 42px 16px;
+    justify-content: center;
+    text-align: center;
+}
+.experience{
+    font-weight: 700;
+    font-size: 4rem;
+}
 @media screen and (max-width:576px) {
     .navbar, 
     .nav-links,
-    .teams{
+    .teams,
+    .features{
+        max-width: 500px;
         flex-direction: column;
         gap: 10px;
     }
+    
     .banner img{
         width: 85%;
         margin-left: 30px;
     }
+    .feature-img img{
+        max-width: 485px;
+    }
+    #experience{
+        max-width: 100px;
+        font-size: 0.5rem;
+        padding: 16px 8px;
+        margin-left: -25px;
+        margin-top: -50px;
+    }
+    .experience{
+        font-size: 1rem;
+    }
     .team-img-container{
         grid-template-columns: repeat(1,1fr);
     }
-    .our-features{
+    .our-features,.features{
         margin-left: 20px;
     }
     .achievements, .sponsor-companies{
